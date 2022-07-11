@@ -1,7 +1,31 @@
-/* Type your code here */
+*{
+	margin: 0px;
+	padding: 0px;
+}
 
+body{
+	background-image: url("assets/background-image1.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+.CricPro_Logo{
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 5% 5% 0% 5%;
+	height: 25px;
+}
+h1{
+	font-size: 35px;
+	text-shadow: 5px 5px rgb(236, 232, 232);
+	margin-left: 4%;
+}
 
-/* change the font family and spacing as per your project font */
+h4{
+	margin-left: 4%;
+	color: #696868;
+	font-size: 20px;
+}
 .footer{
     display:flex;
     flex-direction: row;
@@ -14,3 +38,86 @@
     font-style: normal;
     
 }
+
+table{
+	margin-top: 4%;
+	margin-left: 4%;
+	border-collapse: collapse;
+}
+
+td, th{
+	padding: 10px 20px;
+}
+
+tr{
+	background-color: white;
+	border-bottom: 2px solid #838382;
+	position: relative;
+}
+
+a{
+	position: relative;
+}
+
+.Row1{
+	background-color: orangered;
+	color: white;
+	position: relative;
+}
+
+a{
+	text-decoration: none;
+	color: #2f81ec;
+}
+
+.popup{
+	position: absolute;
+}
+
+.Bold{
+	font-weight: bold;
+	text-align: center;
+}
+
+.BoldRight{
+	font-weight: bold;
+	text-align:right;
+}
+
+.OnlyBold{
+	font-weight: bold;
+}
+
+.Notes{
+	color: #838382;
+}
+
+.popup{
+	border-radius: 5px;
+	width: 30%;
+	position: absolute;
+	
+	z-index: 10;
+}
+
+.overlay {
+	visibility: hidden;
+	opacity: 0;
+	display: inline;
+}
+  
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+  
+.popup .close {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+  }
